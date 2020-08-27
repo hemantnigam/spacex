@@ -1,0 +1,45 @@
+.mission {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  min-height: 295px;
+  .mission-name {
+    font-weight: bold;
+    color: rgb(69, 69, 184);
+  }
+  .mission-logo {
+    height: 150px;
+    background-color: #f2f2f2;
+    text-align: center;
+    img {
+      max-width: 90%;
+      height: 100%;
+    }
+  }
+  .mission-ids {
+    label {
+      font-weight: bold;
+    }
+    ul {
+      color: rgb(69, 69, 184);
+      margin: 0px !important;
+      li {
+        font-weight: 400;
+      }
+    }
+    .na {
+      color: rgb(69, 69, 184);
+    }
+  }
+  div {
+    margin-bottom: 5px;
+    *:first-child {
+      font-weight: bold;
+    }
+    *:last-child {
+      color: rgb(69, 69, 184);
+      text-transform: capitalize;
+      margin-left: 5px;
+    }
+  }
+}

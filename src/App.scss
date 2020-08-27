@@ -1,0 +1,25 @@
+.App {
+  background-color: #f2f2f2;
+  .main-section {
+    display: flex;
+    min-height: 92vh;
+  }
+  header {
+    height: 4vh;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 10px;
+  }
+  footer {
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .developed-by {
+      font-weight: bold;
+    }
+    .name {
+      margin-left: 5px;
+    }
+  }
+}

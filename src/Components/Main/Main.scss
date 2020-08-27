@@ -1,0 +1,12 @@
+.main {
+  width: 80%;
+  margin: 10px 10px 0px 10px;
+  display: flex;
+  height: 90vh;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  .mission-container {
+    width: 23%;
+    margin: 0px 10px 10px 0px;
+  }
+}
