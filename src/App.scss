@@ -1,14 +1,17 @@
 .App {
-  background-color: #f2f2f2;
+  max-width: 1440px;
+    margin: 0 auto;
   .main-section {
     display: flex;
-    min-height: 92vh;
+    // min-height: 92vh;
   }
   header {
-    height: 4vh;
+    height: 40px;
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 700;
     padding-left: 10px;
+    display: flex;
+    align-items: center;
   }
   footer {
     height: 3vh;
