@@ -12,11 +12,14 @@ function Main() {
   const baseURL = "https://api.spaceXdata.com/v3/launches?limit=100";
   let [missionData, setMissionData] = useState([]);
   let [url, setURL] = useState(baseURL);
+  let [spinner, setSpinner] = useState(false);
+
 
   useEffect(() => {
+    setSpinner(true)
     fetch(url)
       .then((response) => response.json())
-      .then((data) => setMissionData(data))
+      .then((data) => {setMissionData(data);setSpinner(false)})
       .catch((err) => console.log(err));
   }, [url]);
 
@@ -43,6 +46,13 @@ function Main() {
 
   return (
     <div className="main">
+      {spinner && <div class="overlay">
+        <div class="overlay__inner">
+          <div class="overlay__content">
+            <span class="spinner"></span>
+          </div>
+        </div>
+      </div>}
       {missionData.map((mission, index) => {
         return (
           <div key={index} className="mission-container">

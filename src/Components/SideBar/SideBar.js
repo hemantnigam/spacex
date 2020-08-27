@@ -63,19 +63,47 @@ function SideBar() {
         <div className="underline-label">Successful Launch</div>
         <div className="action-container">
           <div className="year">
-            <button style={{ backgroundColor: launch.toString() === "True" ? "#58a758" : "" }} onClick={(e) => selectLaunch(e)}>True</button>
+            <button
+              style={{
+                backgroundColor: launch.toString() === "True" ? "#58a758" : "",
+              }}
+              onClick={(e) => selectLaunch(e)}
+            >
+              True
+            </button>
           </div>
           <div className="year">
-            <button style={{ backgroundColor: launch.toString() === "False" ? "#58a758" : "" }} onClick={(e) => selectLaunch(e)}>False</button>
+            <button
+              style={{
+                backgroundColor: launch.toString() === "False" ? "#58a758" : "",
+              }}
+              onClick={(e) => selectLaunch(e)}
+            >
+              False
+            </button>
           </div>
         </div>
         <div className="underline-label">Successful Landing</div>
         <div className="action-container">
           <div className="year">
-            <button style={{ backgroundColor: land.toString() === "True" ? "#58a758" : "" }} onClick={(e) => selectLand(e)}>True</button>
+            <button
+              style={{
+                backgroundColor: land.toString() === "True" ? "#58a758" : "",
+              }}
+              onClick={(e) => selectLand(e)}
+            >
+              True
+            </button>
           </div>
           <div className="year">
-            <button style={{ backgroundColor: land.toString() === "False" ? "#58a758" : "" }} onClick={(e) => selectLand(e)}>False</button>
+            <button
+              style={{
+                backgroundColor: land.toString() === "False" ? "#58a758" : "",
+              }}
+              onClick={(e) => selectLand(e)}
+            >
+              False
+            </button>
           </div>
         </div>
       </div>
