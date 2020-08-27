@@ -46,10 +46,10 @@ function Main() {
 
   return (
     <div className="main">
-      {spinner && <div class="overlay">
-        <div class="overlay__inner">
-          <div class="overlay__content">
-            <span class="spinner"></span>
+      {spinner && <div className="overlay">
+        <div className="overlay__inner">
+          <div className="overlay__content">
+            <span className="spinner"></span>
           </div>
         </div>
       </div>}

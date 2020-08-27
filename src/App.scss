@@ -2,8 +2,11 @@
   max-width: 1440px;
     margin: 0 auto;
   .main-section {
-    display: flex;
-    // min-height: 92vh;
+    @media screen and (min-width: 701px) {
+      & {
+        display: flex;
+      }
+    }
   }
   header {
     height: 40px;
@@ -14,10 +17,11 @@
     align-items: center;
   }
   footer {
-    height: 3vh;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.2rem;
     .developed-by {
       font-weight: bold;
     }

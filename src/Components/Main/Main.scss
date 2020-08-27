@@ -1,13 +1,27 @@
 .main {
   width: 100%;
-  margin: 10px 10px 0px 10px;
-  display: flex;
-  height: 90vh;
-  flex-wrap: wrap;
-  overflow-y: scroll;
+  @media screen and (min-width: 701px) {
+    & {
+      flex-wrap: wrap;
+      display: flex;
+    }
+  }
   .mission-container {
-    width: 25%;
+    // width: 25%;
+    // min-width: 250px;
     padding: 10px;
+    flex-shrink: 1;
     box-sizing: border-box;
+    flex-grow: 1;
+    @media screen and (min-width: 701px) {
+      & {
+        max-width: 50%;
+      }
+    }
+    @media screen and (min-width: 1025px) {
+      & {
+        max-width: 25%;
+      }
+    }
   }
 }

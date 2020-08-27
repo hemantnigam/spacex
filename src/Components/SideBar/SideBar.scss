@@ -1,13 +1,21 @@
 .sidebar {
-  max-width: 250px;
   width: 100%;
-  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  flex-grow: 1;
+  flex-shrink: 1;
+  @media screen and (min-width: 701px) {
+    & {
+      max-width: 250px;
+    }
+  }
   .sidebar-container {
     border-radius: 10px;
     background-color: white;
     padding: 10px;
     .filter-label {
       font-weight: bold;
+      font-size: 1.2rem;
     }
     .underline-label {
       width: 70%;

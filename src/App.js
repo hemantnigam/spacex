@@ -10,10 +10,10 @@ function App() {
     <Provider store={store}>
       <div className="App">
         <header>SpaceX Launch Programs</header>
-        <div className="main-section">
+        <main className="main-section">
           <SideBar />
           <Main />
-        </div>
+        </main>
         <footer>
           <span className="developed-by">Developed by:</span>{" "}
           <span className="name">Hemant Nigam</span>
