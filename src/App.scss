@@ -1,6 +1,9 @@
 .App {
   max-width: 1440px;
-    margin: 0 auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   .main-section {
     @media screen and (min-width: 701px) {
       & {
@@ -22,6 +25,7 @@
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
+    margin-top: auto;
     .developed-by {
       font-weight: bold;
     }
